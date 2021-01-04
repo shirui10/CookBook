@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/whole_on_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--顶上的图-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@mipmap/top_pic" />
+
+    <!--为搜索栏和下拉控件而建立的相对布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="10dp">
+
+        <!--下拉菜单工具-->
+        <Spinner
+            android:id="@+id/spin_one"
+            android:layout_width="19dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/arrow"
+            android:entries="@array/data"
+            android:prompt="@string/spin_title"
+            android:spinnerMode="dialog" />
+
+        <!--搜索icon-->
+        <ImageView
+            android:id="@+id/search_iv_on"
+            android:layout_width="29dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="13dp"
+            android:layout_toStartOf="@+id/spin_one"
+            android:src="@mipmap/search" />
+
+        <!--搜索栏-->
+        <EditText
+            android:id="@+id/search_et_on"
+            android:layout_width="305dp"
+            android:layout_height="60dp"
+            android:hint="@string/search_tip"
+            android:imeOptions="actionSearch"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:theme="@style/myEditText" />
+    </RelativeLayout>
+
+    <!--Tip-->
+    <TextView
+        android:id="@+id/test_on"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="@string/tip_3" />
+
+    <!--菜肴们的列表视图-->
+    <ListView
+        android:id="@+id/lv_1_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorOrange"
+        android:dividerHeight="1dp"
+        android:listSelector="@drawable/list_item" />
+
+</LinearLayout>

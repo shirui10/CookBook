@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    lintOptions {       //网上学到的，之前在建立apk时Build里报错，加了就没了
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+
+    defaultConfig {
+        applicationId "com.shirui.cookbook"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.DetailsActivity.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.13.1'
+    androidTestImplementation 'androidx.DetailsActivity.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.DetailsActivity.espresso:espresso-core:3.3.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    //GSON，谷歌官方发布的进行json数据解析的java类库
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //OkHttp，第三方网络框架
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.0"))
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    //EventBus，用来传输数据的第三方框架
+    implementation 'org.greenrobot:eventbus:3.2.0'
+}

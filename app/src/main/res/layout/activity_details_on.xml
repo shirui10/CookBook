@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/ly_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <!--顶上的图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@mipmap/top_pic" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/rg_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            style="@style/tab_menu_item"
+            android:text="@string/rb1" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/tab_menu_item"
+            android:text="@string/rb2" />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/tab_menu_item"
+            android:text="@string/rb3" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/tab_menu_item"
+            android:text="@string/rb4" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            style="@style/tab_menu_item"
+            android:text="@string/rb5" />
+
+    </RadioGroup>
+
+    <View
+        android:id="@+id/div_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/rg_tab_bar" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/div_tab_bar"
+        android:layout_below="@id/ly_top_bar" />
+
+
+</RelativeLayout>

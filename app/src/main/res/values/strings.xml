@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Cook Book</string>
+    <string name="app_title">COOK BOOK</string>
+    <string name="spin_title">Rank by First Letter</string>
+    <string name="tip_1">List of Ingredients</string>
+    <string name="tip_2">Instruction</string>
+    <string name="tip_3">Meals</string>
+    <string name="tip_4">Pictures of Ingredients</string>
+    <string name="search_tip">Search Recipes</string>
+    <string name="mode_on">Online</string>
+    <string name="mode_off">Offline</string>
+    <string name="test">testtesttesttesttesttest</string>
+    <string name="info">Info</string>
+    <string name="info_content1">All APIs are from：https://www.themealdb.com/api.php</string>
+    <string name="info_content2">This app is ONLY available for educational use, and it is NOT available for commercial use.</string>
+    <string name="info_content3">Thank you for using!</string>
+    <string name="info_content4">by Shirui</string>
+    <string name="info_content5">This app is made for a project in my university.</string>
+    <string name="rb1">Ⅰ</string>
+    <string name="rb2">II</string>
+    <string name="rb3">III</string>
+    <string name="rb4">Ⅳ</string>
+    <string name="rb5">Ⅴ</string>
+
+</resources>

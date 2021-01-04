@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow"
+    android:orientation="vertical"
+    tools:context="com.shirui.cookbook.MainActivity">
+
+    <TextView
+        android:id="@+id/btn_surprise"
+        android:layout_width="230dp"
+        android:layout_height="70dp"
+        android:background="@drawable/btn_top_style" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorDarkBlue"
+            android:textSize="62sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="800dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="610dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/btn_style1"
+                    android:src="@mipmap/btn_online" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="470dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/btn_style2"
+                    android:src="@mipmap/btn_offline" />
+
+                <ImageButton
+                    android:id="@+id/btn_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/btn_style3"
+                    android:src="@mipmap/btn_info" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

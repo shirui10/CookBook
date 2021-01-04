@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--为菜肴的相关的细节描述而建立的线性布局-->
+    <LinearLayout
+        android:id="@+id/details_layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--顶上的图-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@mipmap/top_pic" />
+
+        <!--菜肴大图-->
+        <ImageView
+            android:id="@+id/details_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/sap" />
+
+        <!--标题-->
+        <TextView
+            android:id="@+id/details_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textIsSelectable="true"
+            android:textSize="25sp" />
+
+        <!--Tip-->
+        <TextView
+            android:id="@+id/details_tv_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/colorDarkGray"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <!--步骤-->
+        <TextView
+            android:id="@+id/details_tv_step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/colorDarkGray"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <!--为配料和用量的相关内容表而建立的相对布局-->
+        <RelativeLayout
+            android:id="@+id/details_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:orientation="horizontal">
+
+            <!--Tip-->
+            <TextView
+                android:id="@+id/details_tv_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorDarkGray"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+
+            <!--用量-->
+            <TextView
+                android:id="@+id/details_tv_mea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/colorDarkGray"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+
+            <!--配料-->
+            <TextView
+                android:id="@+id/details_tv_ing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toEndOf="@id/details_tv_mea"
+                android:textColor="@color/colorDarkGray"
+                android:textIsSelectable="true"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
