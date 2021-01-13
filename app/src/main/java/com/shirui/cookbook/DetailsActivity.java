@@ -12,7 +12,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import org.greenrobot.eventbus.EventBus;
 
-import Fragment.MyFragmentPagerAdapter;
+import com.shirui.cookbook.Fragment.MyFragmentPagerAdapter;
 
 public class DetailsActivity extends AppCompatActivity {
 
